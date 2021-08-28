@@ -1,4 +1,4 @@
-# depends_qinglong
+
 安装青龙的一些依赖
 
 
