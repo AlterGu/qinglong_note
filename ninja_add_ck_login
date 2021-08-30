@@ -1,0 +1,4 @@
+进入容器后输入
+```shell
+sed -i '/<body>/a\<script type="text/javascript">\nwindow.onload=function(){\ndocument.getElementsByClassName("card hidden")[0].className = "card";\n}\n</script>' $(find /ql -type f -name '*.html'| xargs grep -l -r 'modulepreload')
+```
