@@ -1,6 +1,7 @@
 docker exec -it qinglong bash -c "npm install -g typescript"
 docker exec -it qinglong bash -c "npm install axios date-fns"
 docker exec -it qinglong bash -c "npm install crypto -g"
+docker exec -it qinglong bash -c "npm install jsdom"
 docker exec -it qinglong bash -c "cd scripts && npm install tslib"
 docker exec -it qinglong bash -c "npm install png-js"
 docker exec -it qinglong bash -c "npm install -g npm"
