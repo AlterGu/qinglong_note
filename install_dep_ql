@@ -13,3 +13,25 @@ docker exec -it qinglong bash -c "pip3 install requests"
 docker exec -it qinglong bash -c "apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && cd scripts && npm install canvas --build-from-source"
 docker exec -it qinglong bash -c "apk add python3 zlib-dev gcc jpeg-dev python3-dev musl-dev freetype-dev"
 docker exec -it qinglong bash -c "cd /ql/scripts/ && apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && npm i && npm i -S ts-node typescript @types/node date-fns axios png-js canvas --build-from-source"
+
+
+或
+
+npm install -g png-js
+npm install -g date-fns
+npm install -g axios
+npm install -g crypto-js
+npm install -g ts-md5
+npm install -g tslib
+npm install -g @types/node
+npm install -g requests
+npm install -g tough-cookie
+npm install -g jsdom
+npm install -g download
+npm install -g tunnel
+npm install -g ws
+不全就把这些也装上
+docker exec -it qinglong bash -c  "pnpm install png-js"
+docker exec -it qinglong bash -c  "pnpm install bless"
+docker exec -it qinglong bash -c  "pnpm install form-data"
+docker exec -it qinglong bash -c  "pnpm install jsdom"
