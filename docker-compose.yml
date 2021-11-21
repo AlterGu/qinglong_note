@@ -1,0 +1,30 @@
+version: "3"
+services:
+  qinglong:
+    image: whyour/qinglong:latest
+    container_name: ql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - 39082:5700
+        #- 15710:5701
+    environment:
+      - ENABLE_HANGUP=true
+      - ENABLE_WEB_PANEL=true
+    volumes:
+      - /ql/config:/ql/config
+      - /ql/log:/ql/log
+      - /ql/db:/ql/db
+      - /ql/repo:/ql/repo
+      - /ql/raw:/ql/raw
+      - /ql/scripts:/ql/scripts
+      - /ql/jbot:/ql/jbot
+      - /ql/ninja:/ql/ninja
+    deploy:
+      resources:
+        limits:
+           cpus: '1'
+           memory: 500M
+        reservations:
+           cpus: '0.5'
+           memory: 300M
