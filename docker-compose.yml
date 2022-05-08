@@ -20,11 +20,11 @@ services:
       - /ql/scripts:/ql/scripts
       - /ql/jbot:/ql/jbot
       - /ql/ninja:/ql/ninja
-    deploy:
-      resources:
-        limits:
-           cpus: '1'
-           memory: 500M
-        reservations:
-           cpus: '0.5'
-           memory: 300M
+    #deploy:
+    #  resources:
+    #    limits:
+    #       cpus: '1'
+    #       memory: 500M
+    #    reservations:
+    #       cpus: '0.5'
+    #       memory: 300M
