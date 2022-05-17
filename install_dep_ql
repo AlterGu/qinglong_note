@@ -30,6 +30,24 @@ npm install -g jsdom
 npm install -g download
 npm install -g tunnel
 npm install -g ws
+npm install -g moment
+npm install -g cheerio
+npm install -g socks-proxy-agent@6.1.1
+npm install -g dotenv
+
+docker exec -it ql /bin/bash -c "pip3 install jsonpath"
+docker exec -it ql /bin/bash -c "pip3 install Telethon"
+docker exec -it ql /bin/bash -c "pip3 install qrcode"
+docker exec -it ql /bin/bash -c "pip3 install aiohttp"
+docker exec -it ql /bin/bash -c "pip3 install PyExecJS"
+docker exec -it ql /bin/bash -c "pip3 install prettytable"
+docker exec -it ql /bin/bash -c "pip3 install PySocks"
+docker exec -it ql /bin/bash -c "pip3 install aiosocksy"
+docker exec -it ql /bin/bash -c "pip3 install Pillow"
+docker exec -it ql /bin/bash -c "pip3 install python-socks"
+docker exec -it ql /bin/bash -c "pip3 install httpx"
+docker exec -it ql /bin/bash -c "pip3 install async_timeout"
+
 不全就把这些也装上
 docker exec -it qinglong bash -c  "pnpm install png-js"
 docker exec -it qinglong bash -c  "pnpm install bless"
