@@ -5,7 +5,7 @@
 解决办法:
 > 1. 执行以下命令
 ```shell
-docker exec -it ql /bin/bash -c "sed -i 's#cdn.jsdelivr.net#fastly.jsdelivr.net#g' /qldist/index.html"
+docker exec -it ql /bin/bash -c "sed -i 's#cdn.jsdelivr.net#fastly.jsdelivr.net#g' /ql/dist/index.html"
 ```
 
 或者
