@@ -1,0 +1,12 @@
+# docker-compose  1.25.5
+version: "3.6"
+services:
+  elmmb:
+    image: elmmb:latest
+    container_name: elmmb
+    hostname: elmmb
+    ports:
+    - 3910:3000
+    volumes:
+    - /elmmb:/etc/elm  
+    restart: unless-stopped 
