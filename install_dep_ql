@@ -1,5 +1,5 @@
 docker exec -it qinglong bash -c "npm install -g typescript"
-docker exec -it qinglong bash -c "npm install axios date-fns"
+docker exec -it qinglong bash -c "npm install date-fns"
 docker exec -it qinglong bash -c "npm install crypto -g"
 docker exec -it qinglong bash -c "npm install jsdom"
 docker exec -it qinglong /bin/bash -c "cd scripts && npm -i install tslib"
@@ -19,7 +19,6 @@ docker exec -it qinglong bash -c "cd /ql/scripts/ && apk add --no-cache build-ba
 
 npm install -g png-js
 npm install -g date-fns
-npm install -g axios
 npm install -g crypto-js
 npm install -g ts-md5
 npm install -g tslib
@@ -34,6 +33,8 @@ npm install -g moment
 npm install -g cheerio
 npm install -g socks-proxy-agent@6.1.1
 npm install -g dotenv
+npm install -g ds
+npm install -g axios@v0.27.2
 
 docker exec -it ql /bin/bash -c "pip3 install jsonpath"
 docker exec -it ql /bin/bash -c "pip3 install Telethon"
