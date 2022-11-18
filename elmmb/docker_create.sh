@@ -36,7 +36,7 @@ DOCKER_UP() {
     fi
     
     
-    wget https://ghproxy.com/https://github.com/lu0b0/ELM/releases/download/2.3/elmmb -O /elmmb/elmmb
+    wget https://ghproxy.com/https://github.com/lu0b0/ELM/releases/download/2.5/elmmb -O /elmmb/elmmb
     
     chmod -R 777 /elmmb
 
